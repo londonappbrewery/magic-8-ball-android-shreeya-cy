@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/ball"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ball1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/askButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="ASK" />
+
+    </RelativeLayout>
+
+</LinearLayout>
